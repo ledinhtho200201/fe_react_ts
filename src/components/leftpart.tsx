@@ -1,3 +1,4 @@
+import eRt from '@/assets/img/logo/eRt.png';
 
 const LeftPart = () => {
     return (
@@ -5,16 +6,14 @@ const LeftPart = () => {
             <div className="arlo_tm_leftpart_wrap">
                 <div className="leftpart_inner">
                     <div className="logo_wrap">
-                        <a href="#"><img src="img/logo/desktop-logo.png" alt="desktop-logo" /></a>
+                        <a href="#"><img style={{ width: 100, height: 100, borderRadius: '50%' }} src={eRt} alt="desktop-logo" /></a>
                     </div>
                     <div className="menu_list_wrap">
                         <ul className="anchor_nav">
                             <li><a href="#home">Home</a></li>
                             <li><a href="#about">About</a></li>
-                            <li><a href="#services">Services</a></li>
+                            <li><a href="#services">Projects</a></li>
                             <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#news">News</a></li>
-                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
                     <div className="leftpart_bottom">
