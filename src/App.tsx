@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import Portfolio from './screens/portfolio'
-import './styles/style.scss'
-import './styles/plugins.scss'
+import Portfolio from '@/screens/portfolio'
+import '@/styles/style.scss'
+import '@/styles/plugins.scss'
 
 
 function App() {
