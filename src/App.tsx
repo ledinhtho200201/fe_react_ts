@@ -2,8 +2,6 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Test10 from './examples/test10';
-import Test13 from './examples/Test13';
 
 
 function App() {
@@ -29,15 +27,7 @@ function App() {
         </p>
       </div>
       <p className="read-the-docs">
-        <Test13
-        // name={'Pildo'}
-        // age={25}
-        // address={'Learn IT'}
-        />
-        <Test10
-          defaultName={'cha ne'}
-          defaultAge={29}
-        />
+        Welcome to Vite
       </p>
     </div>
   )
