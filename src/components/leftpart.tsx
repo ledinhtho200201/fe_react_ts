@@ -1,4 +1,11 @@
 import eRt from '@/assets/img/logo/eRt.png';
+import { TbBrandFacebook } from "react-icons/tb";
+import { TfiYoutube } from "react-icons/tfi";
+import { GiBirdTwitter } from "react-icons/gi";
+import { GiTwister } from "react-icons/gi";
+import { ImInstagram } from "react-icons/im";
+
+
 
 const LeftPart = () => {
     return (
@@ -14,17 +21,27 @@ const LeftPart = () => {
                             <li><a href="#about">About</a></li>
                             <li><a href="#skill">Skills</a></li>
                             <li><a href="#project">Projects</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
                     <div className="leftpart_bottom">
                         <div className="social_wrap">
                             <ul>
-                                <li><a href="#"><i className="xcon-facebook"></i></a></li>
-                                <li><a href="#"><i className="xcon-twitter"></i></a></li>
-                                <li><a href="#"><i className="xcon-linkedin"></i></a></li>
-                                <li><a href="#"><i className="xcon-instagram"></i></a></li>
-                                <li><a href="#"><i className="xcon-behance"></i></a></li>
+                                <li><a href="#">
+                                    <TbBrandFacebook />
+                                </a></li>
+                                <li><a href="#">
+                                    <TfiYoutube />
+                                </a></li>
+                                <li><a href="#">
+                                    <GiBirdTwitter />
+                                </a></li>
+                                <li><a href="#">
+                                    <GiTwister />
+                                </a></li>
+                                <li><a href="#">
+                                    <ImInstagram />
+                                </a></li>
                             </ul>
                         </div>
                     </div>
