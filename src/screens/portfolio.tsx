@@ -2,6 +2,7 @@ import LeftPart from "../components/leftpart";
 import MobileMenu from "../components/mobile/menu";
 import Preloader from "../components/preloader";
 import RightPart from "../components/rightpart";
+import { FloatButton } from 'antd';
 
 const Portfolio = () => {
     return (
@@ -36,7 +37,10 @@ const Portfolio = () => {
                     <RightPart />
                     {/* <!-- /RIGHTPART --> */}
 
-                    <a className="arlo_tm_totop" href="#"></a>
+                    {/* <a className="arlo_tm_totop" href="#"></a> */}
+                    <FloatButton.BackTop
+                        tooltip={<div>Scroll to top</div>}
+                    />
 
                 </div>
             </div >
