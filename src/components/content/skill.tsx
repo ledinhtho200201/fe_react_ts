@@ -1,8 +1,8 @@
 import ProgressBar from "@ramonak/react-progress-bar";
 
-const Skills = () => {
+const Skill = () => {
     return (
-        <div className="arlo_tm_section" id="skills">
+        <div className="arlo_tm_section" id="skill">
             <div className="arlo_tm_skills_wrap">
                 <div className="container">
                     <div className="inner_wrap">
@@ -121,4 +121,4 @@ const Skills = () => {
     )
 }
 
-export default Skills;
+export default Skill;
