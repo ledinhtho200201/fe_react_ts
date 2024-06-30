@@ -1,3 +1,4 @@
+import { useState } from "react";
 import LeftPart from "../components/leftpart";
 import MobileMenu from "../components/mobile/menu";
 import Preloader from "../components/preloader";
@@ -5,6 +6,8 @@ import RightPart from "../components/rightpart";
 import { FloatButton } from 'antd';
 
 const Portfolio = () => {
+    const [hideLeftPart, setHideLeftPart] = useState<boolean>(true)
+
     return (
         <>
             {/*  WRAPPER ALL */}
@@ -30,11 +33,17 @@ const Portfolio = () => {
                 <div className="arlo_tm_content">
 
                     {/* <!-- LEFTPART --> */}
-                    <LeftPart />
+                    <LeftPart
+                        hideLeftPart={hideLeftPart}
+                        setHideLeftPart={setHideLeftPart}
+                    />
                     {/* <!-- /LEFTPART --> */}
 
                     {/* <!-- RIGHTPART --> */}
-                    <RightPart />
+                    <RightPart
+                        hideLeftPart={hideLeftPart}
+                        setHideLeftPart={setHideLeftPart}
+                    />
                     {/* <!-- /RIGHTPART --> */}
 
                     {/* <a className="arlo_tm_totop" href="#"></a> */}

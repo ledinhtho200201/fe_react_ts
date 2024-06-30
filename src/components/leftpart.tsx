@@ -5,12 +5,15 @@ import { GiBirdTwitter } from "react-icons/gi";
 import { GiTwister } from "react-icons/gi";
 import { ImInstagram } from "react-icons/im";
 
+interface IProps {
+    hideLeftPart: boolean;
+    setHideLeftPart: (value: boolean) => void;
+}
 
-
-const LeftPart = () => {
+const LeftPart = (props: IProps) => {
     return (
         <>
-            <div className="arlo_tm_leftpart_wrap">
+            <div className={props.hideLeftPart ? "arlo_tm_leftpart_wrap" : "arlo_tm_leftpart_wrap opened"}>
                 <div className="leftpart_inner">
                     <div className="logo_wrap">
                         <a href="#"><img style={{ width: 100, height: 100, borderRadius: '50%' }} src={eRt} alt="desktop-logo" /></a>
@@ -45,7 +48,10 @@ const LeftPart = () => {
                             </ul>
                         </div>
                     </div>
-                    <a className="arlo_tm_resize" href="#"><i className="xcon-angle-left"></i></a>
+                    <a className={props.hideLeftPart ? "arlo_tm_resize" : "arlo_tm_resize opened"}
+                        href="#"
+                        onClick={() => props.setHideLeftPart(!props.hideLeftPart)}
+                    ><i className={props.hideLeftPart ? "xcon-angle-left" : "xcon-angle-left opened"}></i></a>
                 </div>
             </div>
         </>
