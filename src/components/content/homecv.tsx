@@ -1,6 +1,15 @@
 import { TypeAnimation } from 'react-type-animation';
+import rabbitLogo from '@/assets/img/hero/img.jpg'
 
 const HomeCV = () => {
+    const handleScrollToAbout = (e: React.MouseEvent<HTMLAnchorElement>) => {
+        const section = document.querySelector('#about');
+        if (section) {
+            e.preventDefault();
+            section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    };
+
     return (
         <>
             <div className="arlo_tm_section" id="home">
@@ -13,7 +22,7 @@ const HomeCV = () => {
                         <div className="content hero">
                             <div className="inner_content">
                                 <div className="image_wrap">
-                                    <img src="img/hero/img.jpg" alt="hero" />
+                                    <img src={rabbitLogo} alt="hero" />
                                 </div>
                                 <div className="name_holder">
                                     <h3>Thor <span>Lee</span></h3>
@@ -45,7 +54,7 @@ const HomeCV = () => {
                             </div>
                         </div>
                         <div className="arlo_tm_arrow_wrap bounce anchor">
-                            <a href="#about"><i className="xcon-angle-double-down"></i></a>
+                            <a href="#" onClick={(e) => handleScrollToAbout(e)}><i className="xcon-angle-double-down"></i></a>
                         </div>
                     </div>
                 </div>

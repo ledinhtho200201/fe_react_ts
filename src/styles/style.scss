@@ -588,14 +588,14 @@ img.svg {
 }
 
 .arlo_tm_hero_header_wrap {
-    width             : 100%;
-    height            : auto;
-    clear             : both;
-    float             : left;
-    margin-bottom     : 100px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing   : border-box;
-    box-sizing        : border-box;
+    width                : 100%;
+    height               : auto;
+    clear                : both;
+    float                : left;
+    // margin-bottom     : 100px;
+    -webkit-box-sizing   : border-box;
+    -moz-box-sizing      : border-box;
+    box-sizing           : border-box;
 
     .inner_content {
         position          : absolute;
@@ -777,7 +777,7 @@ img.svg {
     }
 
     .overlay_image.hero {
-        background-image: url(../img/hero/2.jpg);
+        background-image: url(../assets/img/hero/2.jpg);
     }
 
     .overlay_color.hero {
@@ -789,7 +789,7 @@ img.svg {
     }
 
     .overlay_image.testimonial {
-        background-image: url(../img/hero/3.jpg);
+        background-image: url(../assets/img/hero/3.jpg);
     }
 
     .overlay_color.testimonial {
@@ -2525,7 +2525,7 @@ img.svg {
 .arlo_tm_universal_box_wrap.particle {
     height             : 100vh;
     position           : relative;
-    background-image   : url(../img/hero/2.jpg);
+    background-image   : url(../assets/img/hero/2.jpg);
     background-repeat  : no-repeat;
     background-size    : cover;
     background-position: center;
@@ -2546,7 +2546,7 @@ img.svg {
     background-repeat  : no-repeat;
     background-position: center;
     background-size    : cover;
-    background-image   : url(../img/hero/2.jpg);
+    background-image   : url(../assets/img/hero/2.jpg);
     position           : relative;
 
     .overlay {
@@ -2605,7 +2605,7 @@ img.svg {
         }
 
         .overlay_image.top {
-            background-image: url(../img/hero/2.jpg);
+            background-image: url(../assets/img/hero/2.jpg);
         }
 
         .overlay_color.top {
