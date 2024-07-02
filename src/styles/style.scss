@@ -455,6 +455,10 @@ img.svg {
                             width: 35px;
                         }
                     }
+
+                    &.active {
+                        color: $color_3;
+                    }
                 }
             }
         }
