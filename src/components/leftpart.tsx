@@ -5,6 +5,8 @@ import { GiBirdTwitter } from "react-icons/gi";
 import { GiTwister } from "react-icons/gi";
 import { ImInstagram } from "react-icons/im";
 import { useEffect, useState } from 'react';
+import { isMobile } from 'react-device-detect';
+
 
 interface IProps {
     hideLeftPart: boolean;
@@ -105,13 +107,17 @@ const LeftPart = (props: IProps) => {
                             </ul>
                         </div>
                     </div>
-                    <a className={props.hideLeftPart ? "arlo_tm_resize" : "arlo_tm_resize opened"}
-                        href="#"
-                        onClick={(e) => {
-                            e.preventDefault()
-                            props.setHideLeftPart(!props.hideLeftPart)
-                        }}
-                    ><i className={props.hideLeftPart ? "xcon-angle-left" : "xcon-angle-left opened"}></i></a>
+                    {!isMobile &&
+                        <a className={props.hideLeftPart ? "arlo_tm_resize" : "arlo_tm_resize opened"}
+                            href="#"
+                            onClick={(e) => {
+                                e.preventDefault()
+                                props.setHideLeftPart(!props.hideLeftPart)
+                            }}
+                        >
+                            <i className={props.hideLeftPart ? "xcon-angle-left" : "xcon-angle-left opened"}></i>
+                        </a>
+                    }
                 </div>
             </div>
         </>
